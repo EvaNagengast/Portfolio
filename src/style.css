@@ -2,11 +2,27 @@
   --base-color: #6c63ff;
   --secondary-color: #f5f2fe;
 }
-
-body {
-  margin: 60px;
+body{
+    font-family: 'Merriweather', serif;
 }
+/* vav bar */
+.logo {
+  padding-left: 10px;
+  max-height: 60px;
+}
+.navbar {
+  padding: 0 10px 0 0 !important;
+  margin: 0;font-family: 'Caveat', cursive;
+  font-size: 20px;
+  background-color: rgb(237, 193, 200);
+}
+.nav-link {
+  color: rgb(123, 13, 31) !important;
+
+}
+/*  */
 .headline {
+  margin-top: 5px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -22,10 +38,13 @@ h2 {
   font-size: 50px;
   margin: 0;
 }
+
+
 h1 {
   font-size: 96px;
   text-align: center;
-  margin: 0;
+  margin: 0;font-family: 'Caveat', cursive;
+
 }
 h3 {
   font-size: 24px;
@@ -91,5 +110,5 @@ h3 {
   color: var(--base-color);
 }
 .contactEmail:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }

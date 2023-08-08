@@ -4,20 +4,114 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
+
+    <!-- font-family: 'Alata', sans-serif;
+font-family: 'Alata', sans-serif;
+font-family: 'Berkshire Swash', cursive;
+font-family: 'Caveat', cursive;
+font-family: 'DM Serif Text', serif;
+font-family: 'Homemade Apple', cursive;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Josefin Slab', serif;
+font-family: 'Lumanosimo', cursive;
+font-family: 'Merriweather', serif;
+font-family: 'Montserrat Alternates', sans-serif;
+font-family: 'Nothing You Could Do', cursive;
+font-family: 'Playfair Display', serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Vibes', cursive;
+     -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Berkshire+Swash&family=Caveat:wght@400;500&family=DM+Serif+Text:ital@0;1&family=Homemade+Apple&family=Josefin+Sans:wght@300;400;600&family=Josefin+Slab:wght@200;400;600&family=Lumanosimo&family=Merriweather:ital,wght@0,300;0,400;0,900;1,400;1,900&family=Montserrat+Alternates:wght@200;400&family=Nothing+You+Could+Do&family=Playfair+Display:ital@0;1&family=Poppins:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,200;1,300;1,400;1,700;1,800;1,900&family=Raleway:wght@200;400&family=Vibes&display=swap"
+      rel="stylesheet"
+    />
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
-    <!--  -->
-   
-    <div class="headline">
-   <img class="profilePicture" src="media/1690389240984.jpg" /> <h2>Hi! I am</h2></div>
- <h1>Eva Nagengast</h1>
-    <h3>Front-end developer, based in London</h3>
+    <!--nav bar  -->
+
+    <nav class="navbar navbar-expand-sm">
+      <a class="navbar-brand" href="#"
+        ><img src="media/logo1.png" class="logo"
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdownMenuLink"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Dropdown link
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- body -->
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="col-sm-5">
+            <img class="profilePicture" src="media/1690389240984.jpg" />
+          </div>
+          <div class="col-sm-7">
+            <div class="col-sm-12"><h2>Hi! I am</h2></div>
+            <div class="col-sm-12"><h1>Eva Nagengast</h1></div>
+          </div>
+        </div>
+        <div class="col-sm-12">
+          <h3>Front-end developer, based in London</h3>
+        </div>
+      </div>
+    </div>
+
     <div class="nextPage">
-    <a href="about.html#contact-email" class="contactButton">Contact me</a>
-    <a href="about.html" class="aboutMeButton">About me</a>
-</div>
-<!---->
-  <script src="src/java.js"></script>
-</body>
+      <a href="about.html#contact-email" class="contactButton">Contact me</a>
+      <a href="about.html" class="aboutMeButton">About me</a>
+    </div>
+    <!---->
+    <script src="src/java.js"></script>
+  </body>
 </html>
