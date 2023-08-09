@@ -1,6 +1,6 @@
 :root {
   --base-color: rgb(237, 193, 200);
-  --secondary-color: #77a8a5;
+  --secondary-color: #779da8;
   --base-shaddow: 0px 0px 10px rgba(97, 0, 16, 0.381);
   --text-base-color: rgb(169, 5, 33);
   --primary-gradient: linear-gradient(
@@ -11,15 +11,17 @@
 
   --secondary-gradient: linear-gradient(
     178deg,
-    rgb(119, 168, 165) -4%,
+    rgb(119, 157, 168) -4%,
     rgb(240, 237, 229) 141%
-  )
+  );
 }
-
+.boxheadline{
+  color: var(--text-base-color);
+}
 body {
   font-family: "Merriweather", serif;
 }
-/* vav bar */
+/* nav bar */
 .logo {
   max-height: 65px;
   padding-left: 10px;
@@ -37,7 +39,7 @@ body {
 /*  */
 
 .profilePicture {
-  height: 100px;
+  height: 150px;
   border-radius: 50%;
   margin-right: 10px;
   box-shadow: var(--base-shaddow);
@@ -91,12 +93,46 @@ body {
 }
 
 /* showcase */
-.textbox {
-  background: var(
-  --secondary-gradient
-  )
+.imgbox {
+  background: var(--primary-gradient);
+}
+.imgWeatherapp {
+  max-width: 70%;
+  height: auto;
+  transition: all 350ms ease-in-out;
+  filter: grayscale(100%);
+}
+.imgWeatherapp:hover{
+    transform: scale(1.07);
+    filter: brightness(90%) 
+
+}
+.textWeatherapp{
+  text-align: start;
 }
 
+.imgWorldclock {
+  max-width: 70%;
+  height: auto;
+  transition: all 350ms ease-in-out;
+  filter: grayscale(100%);
+}
+.imgWorldclock:hover{
+    transform: scale(1.07);
+    filter: brightness(90%) 
+
+}
+.imgTreasurehunts {
+  max-width: 70%;
+  height: auto;
+  filter: grayscale(100%);
+  transition: all 350ms ease-in-out;
+}
+.imgTreasurehunts:hover{
+    transform: scale(1.07);
+    filter: brightness(90%) 
+
+}
 /*  */
 /*  */
 /* page 2 */
