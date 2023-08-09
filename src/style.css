@@ -127,34 +127,45 @@ body {
   box-shadow: var(--base-shaddow);
 }
 .imgWeatherapp {
-  max-width: 70%;
+  max-width: 80%;
   height: auto;
   transition: all 350ms ease-in-out;
   filter: hue-rotate(152deg);
 }
 .imgWeatherapp:hover {
-  transform: scale(1.07);
+  transform: scale(1.5);
   filter: brightness(99%);
 }
 
 .imgWorldclock {
-  max-width: 70%;
+  max-width: 80%;
   height: auto;
   transition: all 350ms ease-in-out;
   filter: hue-rotate(259deg) saturate(70%);
 }
 .imgWorldclock:hover {
-  transform: scale(1.07);
+  transform: scale(1.5);
   filter: brightness(105%);
 }
 .imgTreasurehunts {
-  max-width: 70%;
+  max-width: 80%;
   height: auto;
   filter: hue-rotate(259deg) saturate(50%);
   transition: all 350ms ease-in-out;
 }
 .imgTreasurehunts:hover {
-  transform: scale(1.07);
+  transform: scale(1.5);
+  filter: brightness(99%);
+}
+
+.imgBirds {
+  max-width: 80%;
+  height: auto;
+  filter: hue-rotate(288deg) saturate(50%);
+  transition: all 350ms ease-in-out;
+}
+.imgBirds:hover {
+  transform: scale(1.5);
   filter: brightness(99%);
 }
 /* footer */
@@ -197,12 +208,12 @@ hr {
 /*  */
 /*  */
 
-
 .contactEmail {
-font-size: 30px;
+  font-size: 30px;
 
-color: var(--base-color);
+  color: var(--base-color);
+  transform: all 500ms ease-in;
 }
 .contactEmail:hover {
-  text-decoration:wavy underline var(--base-color);
+  text-decoration: wavy underline var(--base-color);
 }
