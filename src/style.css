@@ -197,6 +197,12 @@ hr {
 /*  */
 /*  */
 
-.contact{
-  color: var(--text-base-color);
+
+.contactEmail {
+font-size: 30px;
+
+color: var(--base-color);
+}
+.contactEmail:hover {
+  text-decoration:wavy underline var(--base-color);
 }
