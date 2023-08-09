@@ -15,6 +15,11 @@
     rgb(240, 237, 229) 141%
   );
 }
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+
 .boxheadline {
   color: var(--text-base-color);
 }
@@ -29,7 +34,9 @@
 .headlineOne.indexPage {
   line-height: 133px;
 }
-
+.headlineOne.aboutPage {
+justify-content: center;
+}
 .headlineTwo {
   font-size: 24px;
   color: #4c4c4c;
