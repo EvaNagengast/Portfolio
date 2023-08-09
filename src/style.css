@@ -1,58 +1,71 @@
 :root {
-  --base-color: #6c63ff;
-  --secondary-color: #f5f2fe;
+  --base-color: rgb(237, 193, 200);
+  --secondary-color: #77a8a5;
+  --base-shaddow: 0px 0px 10px rgba(97, 0, 16, 0.381);
+  --text-base-color: rgb(169, 5, 33);
+  --primary-gradient: linear-gradient(
+    69deg,
+    rgb(250, 240, 228) 0%,
+    rgb(237, 193, 200) 77%
+  );
+
+  --secondary-gradient: linear-gradient(
+    178deg,
+    rgb(119, 168, 165) -4%,
+    rgb(240, 237, 229) 141%
+  )
 }
-body{
-    font-family: 'Merriweather', serif;
+
+body {
+  font-family: "Merriweather", serif;
 }
 /* vav bar */
 .logo {
+  max-height: 65px;
   padding-left: 10px;
-  max-height: 60px;
 }
 .navbar {
   padding: 0 10px 0 0 !important;
-  margin: 0;font-family: 'Caveat', cursive;
+  margin: 0;
+
   font-size: 20px;
-  background-color: rgb(237, 193, 200);
+  background-color: var(--base-color);
 }
 .nav-link {
-  color: rgb(123, 13, 31) !important;
-
+  color: var(--text-base-color) !important;
 }
 /*  */
-.headline {
-  margin-top: 5px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
+
 .profilePicture {
   height: 100px;
   border-radius: 50%;
   margin-right: 10px;
-  box-shadow: 2px 2px 9px rgba(39, 91, 86, 0.712);
+  box-shadow: var(--base-shaddow);
+  filter: brightness(110%) saturate(77%);
 }
-h2 {
-  font-size: 50px;
-  margin: 0;
+.profilediv {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
-
-h1 {
+.headlineOne {
   font-size: 96px;
+  display: flex;
   text-align: center;
-  margin: 0;font-family: 'Caveat', cursive;
-
+  line-height: 74px;
+  color: var(--secondary-color);
+  font-family: "Caveat", cursive;
 }
-h3 {
+.headlineTwo {
   font-size: 24px;
-  text-align: center;
+
   color: #4c4c4c;
-  margin: 0;
+  display: block;
+  margin: 0 auto;
 }
-.nextPage {
+/* buttons */
+.navigationButton {
   display: flex;
   justify-content: center;
   flex-flow: row;
@@ -70,13 +83,25 @@ h3 {
 .contactButton {
   background-color: var(--base-color);
   color: white;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: var(--base-shaddow);
 }
 
 .aboutMeButton {
   color: var(--base-color);
 }
+
+/* showcase */
+.textbox {
+  background: var(
+  --secondary-gradient
+  )
+}
+
+/*  */
+/*  */
 /* page 2 */
+/*  */
+/*  */
 .homeLink {
   color: var(--base-color);
   text-align: center;
