@@ -65,6 +65,9 @@ body {
 .nav-link {
   color: var(--text-base-color) !important;
 }
+ .active{
+  font-weight: 900;
+ }
 /*  headline */
 
 .profilePicture {
