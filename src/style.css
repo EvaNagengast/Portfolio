@@ -81,12 +81,10 @@ body {
 }
 /*  headline */
 h1 {
-  font-size: 24px;
-  color: #4c4c4c;
+  color: #460202;
 }
 h2 {
   font-size: 96px;
-
   color: var(--secondary-color);
   font-family: "Caveat", cursive;
 }
@@ -99,9 +97,7 @@ h2 {
 }
 
 /* showcase */
-.showcase {
-  margin-top: 120px;
-}
+
 .imgbox {
   background: var(--primary-gradient);
   box-shadow: var(--base-shaddow);
@@ -206,44 +202,63 @@ hr {
 .contactEmail:hover {
   text-decoration: wavy underline var(--base-color);
 }
-
+/*  */
 @media (max-width: 576px) {
-  h2 {
+  .indexh2 {
     font-size: 74px;
   }
-  .headline {
-    margin-top: 30px;
-  }
-  .showcase {
+  .indexShowcase {
     margin-top: 20px;
   }
+  .indexHeadline {
+    margin-top: 20px;
+  }
+  .abouth2 {
+    font-size: 80px;
+  }
+  .abouth1 {
+    font-size: 28px;
+  }
 }
+/*  */
 @media (min-width: 576px) and (max-width: 768px) {
-  h2 {
+  .indexh2 {
     font-size: 80px;
     line-height: 80px;
   }
-  .headline {
-    margin-top: 20px;
+  .indexShowcase {
+    margin-top: 30px;
   }
-  .showcase {
+  .indexHeadline {
     margin-top: 30px;
   }
 }
+/*  */
 @media (min-width: 768px) and (max-width: 992px) {
-  .headline {
-    margin-top: 80px;
-  }
-  .showcase {
-    margin-top: 60px;
+  .indexh2 {
+    line-height: 70px;
+
+    .indexh1 {
+      margin-top: 20px;
+    }
+    .indexShowcase {
+      margin-top: 60px;
+    }
+    .indexHeadline {
+      margin-top: 40px;
+    }
+    .profilePicture {
+      margin-top: 20px;
+    }
   }
 }
 
+/*  */
 @media (min-width: 992px) {
-  .headline {
-    margin-top: 80px;
-  }
-  .showcase {
+  .indexShowcase {
     margin-top: 120px;
+  }
+  .indexHeadline {
+    margin-top: 60px;
   }
 }
