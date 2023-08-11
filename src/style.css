@@ -1,7 +1,7 @@
 :root {
   --base-color: rgb(237, 193, 200);
   --secondary-color: #779da8;
-  --base-shaddow: 0px 0px 10px rgba(97, 0, 16, 0.381);
+  --base-shaddow: 0px 0px 6px rgba(97, 0, 16, 0.381);
   --text-base-color: rgb(169, 5, 33);
   --primary-gradient: linear-gradient(
     205deg,
@@ -15,13 +15,11 @@
     rgb(155, 185, 194) 98%
   );
 }
-/* custom classes */
-.headlineLineHeight{
-  line-height: 135px;
-}
 .material-symbols-outlined {
   font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 48;
 }
+
+/* custom classes */
 
 .boxheadline {
   color: var(--text-base-color);
@@ -29,14 +27,35 @@
 .blocktext {
   text-align: justify;
 }
-h2 {
-  font-size: 96px;
-  display: flex;
-  text-align: center;
-  color: var(--secondary-color);
-  font-family: "Caveat", cursive; 
-
+.button {
+  color: var(--text-base-color);
+  padding: 20px;
+  border: 1px solid var(--base-color);
+  border-radius: 5px;
+  margin: 10px;
+  text-decoration: none;
 }
+.buttonFilled {
+  background-color: var(--base-color);
+  color: var(--text-base-color);
+  box-shadow: var(--base-shaddow);
+  padding: 20px;
+  border: 1px solid var(--base-color);
+  border-radius: 5px;
+  margin: 10px;
+  text-decoration: none;
+}
+.buttonFilled:hover {
+  color: var(--base-color);
+  border: 1px solid var(--base-color);
+  background-color: white;
+}
+.button:hover {
+  border: 1px solid var(--base-color);
+  background-color: var(--base-color);
+  color: white;
+}
+/* Body */
 
 body {
   font-family: "Merriweather", serif;
@@ -57,59 +76,36 @@ body {
 .nav-link {
   color: var(--text-base-color) !important;
 }
- .active{
+.active {
   font-weight: 900;
- }
+}
 /*  headline */
 h1 {
   font-size: 24px;
   color: #4c4c4c;
-  display: block;
-  margin: 0 auto;
+}
+h2 {
+  font-size: 96px;
+
+  color: var(--secondary-color);
+  font-family: "Caveat", cursive;
 }
 
 .profilePicture {
   height: 150px;
   border-radius: 50%;
-  margin-right: 10px;
   box-shadow: var(--base-shaddow);
   filter: brightness(110%) saturate(77%);
 }
-.profilediv {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
 
-
-
-/* buttons */
-.navigationButton {
-  display: flex;
-  justify-content: center;
-  flex-flow: row;
-  margin-top: 40px;
-}
-.contactButton,
-.aboutMeButton {
-  padding: 20px;
-  border: 1px solid var(--base-color);
-  border-radius: 5px;
-  margin: 10px;
-  text-decoration: none;
-}
-
-.contactButton {
-  background-color: var(--base-color);
-  color: var(--text-base-color);
-  box-shadow: var(--base-shaddow);
-}
-
-.aboutMeButton {
-  color: var(--text-base-color);
+.headline {
+  margin-top: 100px;
 }
 
 /* showcase */
+.showcase {
+  margin-top: 120px;
+}
 .imgbox {
   background: var(--primary-gradient);
   box-shadow: var(--base-shaddow);
@@ -156,6 +152,15 @@ h1 {
   transform: scale(1.3);
   filter: brightness(99%);
 }
+
+/* buttons */
+.navigationButton {
+  display: flex;
+  justify-content: center;
+  flex-flow: row;
+  margin-top: 40px;
+}
+
 /* footer */
 hr {
   border: 0;
@@ -204,4 +209,10 @@ hr {
 }
 .contactEmail:hover {
   text-decoration: wavy underline var(--base-color);
+}
+
+@media (max-width: 425px) {
+  h2 {
+    font-size: 126px;
+  }
 }
