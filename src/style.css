@@ -237,19 +237,19 @@ hr {
 @media (min-width: 768px) and (max-width: 992px) {
   .indexh2 {
     line-height: 70px;
+  }
 
-    .indexh1 {
-      margin-top: 20px;
-    }
-    .indexShowcase {
-      margin-top: 60px;
-    }
-    .indexHeadline {
-      margin-top: 40px;
-    }
-    .profilePicture {
-      margin-top: 20px;
-    }
+  .indexh1 {
+    margin-top: 20px;
+  }
+  .indexShowcase {
+    margin-top: 60px;
+  }
+  .indexHeadline {
+    margin-top: 40px;
+  }
+  .profilePicture {
+    margin-top: 50px;
   }
 }
 
