@@ -101,6 +101,7 @@ h2 {
 .imgbox {
   background: var(--primary-gradient);
   box-shadow: var(--base-shaddow);
+  height: 100%;
 }
 .imgWeatherapp {
   max-width: 80%;
